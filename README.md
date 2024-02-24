@@ -1,2 +1,2 @@
 # RTL-coding
-7 days of RTL
+ days of RTL
