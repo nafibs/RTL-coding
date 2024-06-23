@@ -1,4 +1,4 @@
-module JKFF(J,K,CLK,RST,Q,Qbar);
+module JKflipflop(J,K,CLK,RST,Q,Qbar);
 input J,K,CLK,RST;
 output reg Q,Qbar;
 always@(negedge CLK,negedge RST)
@@ -20,4 +20,9 @@ Q<=Qbar;
 Qbar<=Q;
 end
 end
+else begin
+Q=0;
+Qbar=~Q;
+end
 endmodule
+
